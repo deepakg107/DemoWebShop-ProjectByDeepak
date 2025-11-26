@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 import com.aventstack.extentreports.Status;
 
 
-public class ComputerTest extends BaseConfig{
+public class Computer extends BaseConfig{
 	
 	@Test(enabled=true,groups = "ft",priority = 3)
 	public void verifyDesktop()

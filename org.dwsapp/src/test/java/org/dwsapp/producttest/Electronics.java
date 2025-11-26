@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-public class ElectronicsTest extends BaseConfig{
+public class Electronics extends BaseConfig{
 
 	@Test(groups = "ft",priority = 2,enabled = true)
 	public void verifyCamera()

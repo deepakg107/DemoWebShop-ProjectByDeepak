@@ -14,7 +14,7 @@ import com.aventstack.extentreports.Status;
 
 
 
-public class BookTest extends BaseConfig{
+public class Book extends BaseConfig{
 
 	@Test(enabled=true,groups = "rt",priority = 1)
 	public void verifyHealthBook() {
