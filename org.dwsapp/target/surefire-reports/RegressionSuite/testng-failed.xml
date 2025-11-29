@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://demowebshop.tricentis.com/"/>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="org.dwsapp.producttest.ProductTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyCellPhones"/>
+          <include name="browserSetup"/>
+          <include name="reportTerminate"/>
+          <include name="reportSetup"/>
+          <include name="logout"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- org.dwsapp.producttest.ProductTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

@@ -11,8 +11,8 @@ public class PropertiesLibrary implements ProjectConstant {
 	public FileInputStream fis;
 	public FileOutputStream fos;
 	public Properties propertyobj;
-	
-	public String readData(String key) 
+
+	public String readData(String key)
 	{
 		//Step 1...
 		try {
@@ -21,9 +21,9 @@ public class PropertiesLibrary implements ProjectConstant {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//Step 2 
+		//Step 2
 		propertyobj=new Properties();
-		
+
 		//Step 3
 		try {
 			propertyobj.load(fis);
@@ -31,12 +31,12 @@ public class PropertiesLibrary implements ProjectConstant {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
+
 		// Step  4
 		return propertyobj.getProperty(key);
-		
-		
+
+
 	}
 
 }

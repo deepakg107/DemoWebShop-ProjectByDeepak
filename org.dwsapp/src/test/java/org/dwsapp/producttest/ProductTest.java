@@ -10,10 +10,8 @@ import org.dwsapp.pagerepository.CellPhonesPage;
 import org.dwsapp.pagerepository.DesktopPage;
 import org.dwsapp.pagerepository.NoteBookPage;
 import org.dwsapp.pagerepository.ShoopingCartPage;
-
 import org.testng.Assert;
 import org.testng.Reporter;
-
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -22,6 +20,8 @@ import com.aventstack.extentreports.Status;
 public class ProductTest extends BaseConfig {
 	@Test(enabled = true, groups = "rt", priority = 1)
 	public void verifyHealthBook() {
+
+
 
 		// create the Test Information
 		test = report.createTest("verify Bookproduct 1");
@@ -50,7 +50,7 @@ public class ProductTest extends BaseConfig {
 		Reporter.log("search box is enabled ", true);
 
 		// enterDataOnElements(wpobj.getSearch(),searchbook);
-		
+
 		// step_4.1  - enter text "book" in search Store
 		enterDataOnElements(wpobj.getSearch(), excelLibraryobj.readData("SearchBook", 2, 0));
 
@@ -109,7 +109,7 @@ public class ProductTest extends BaseConfig {
 
 		//Step_4.6  -select AgreeTermsCheckbox
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getAgreeTermsCheckbox());
-        
+
 		softassertobj.assertEquals(shoopingCartPageobj.getAgreeTermsCheckbox().isSelected(), true);
 		Reporter.log("Agree Terms checkbox selected",true);
 
@@ -118,57 +118,57 @@ public class ProductTest extends BaseConfig {
 
 		//Step_4.8  -select StateDropdown
 		selectOptions(shoopingCartPageobj.getStateDropdown(), "62");
-		
+
 		//Step_4.9  -Enter postal code
 		enterDataOnElements(shoopingCartPageobj.getZipPostalCode(), "500090");
-		
+
 		Assert.assertEquals(shoopingCartPageobj.getCheckoutButton().isDisplayed(), true);
 		Reporter.log("checkoutbutton is displayed",true);
-		
+
 		//Step_4.10  -click checkout button
 		clickOnElement(shoopingCartPageobj.getCheckoutButton());
 		Reporter.log("clicked on checkout button");
-		
+
 		//Step_4.11  -click BillingAddresscontinueButton
 		clickOnElement(shoopingCartPageobj.getBillingAddresscontinueButton());
-		
+
 		//Step_4.12  -select InStorePickupCheckbox
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getInStorePickupCheckbox());
-		
+
 		//Step_4.13  -click ShippingAddressContinueButton
 		clickOnElement(shoopingCartPageobj.getShippingAddressContinueButton());
-		
+
 		//Step_4.14  -select payment method
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getPaymentMethodByCHECK());
 		Reporter.log("payment method check",true);
-		
+
 		//Step_4.15  -click payment method continue button
 		clickOnElement(shoopingCartPageobj.getPaymentMethodContinueButton());
-		
+
 //		enterDataOnElements(shoopingCartPageobj.getCardHolderName(), "deepak12@");
-//		
+//
 //		enterDataOnElements(shoopingCartPageobj.getCardNumber(), "12345907");
-//		
+//
 //		enterDataOnElements(shoopingCartPageobj.getCardCode(), "999");
-		
+
 		//Step_4.16  -click payment Information continue button
 		clickOnElement(shoopingCartPageobj.getPaymentInfoContinueButton());
-		
+
 		//Step_4.17  -click ConfirmOrderButton
 		clickOnElement(shoopingCartPageobj.getConfirmOrderButton());
 		Reporter.log("confirm order :book",true);
-		
+
 		//Step_4.18  -click ForOrderDetails
 		clickOnElement(shoopingCartPageobj.getClickhereForOrderDetails());
-		
+
 		//step_4.19  -navigateBack to thankyou
 		driver.navigate().back();
-		
+
 		//step_4.20  -click on ThankYou continue button
 		clickOnElement(shoopingCartPageobj.getContinueThankYou());
 		Reporter.log("ThankYou book order placed",true);
 		Reporter.log("step 4:book verified & order successfull",true);
-		
+
 		// Assert.fail();
 	}
 
@@ -230,7 +230,7 @@ public class ProductTest extends BaseConfig {
 			test.log(Status.FAIL, "Step4: verified the desktopProduct is Not displayed and not enabled");
 		}
 
-		//step_5.3  -click on desktop product 
+		//step_5.3  -click on desktop product
 		clickOnElement(desktopPageobj.getDesktopProduct());
 
 		// add to cart is displayed or not
@@ -245,7 +245,7 @@ public class ProductTest extends BaseConfig {
 
 		Reporter.log(" desktop product is added to cart", true);
 		//Reporter.log("All Desktop products Verified .......", true);
-		
+
 		Assert.assertTrue(shoopingCartPageobj.getShoopingCartlink().isDisplayed());
 		Reporter.log("shooping cart displayed", true);
 
@@ -259,54 +259,54 @@ public class ProductTest extends BaseConfig {
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getAgreeTermsCheckbox());
 
 		//selectOptions("Canada",shoopingCartPageobj.getCountryDropdown());
-		
+
 		//step_5.7  -select country dropdown option
 		selectOptions(shoopingCartPageobj.getCountryDropdown(), 1);
 
 		//step_5.8  -select state dropdown option
 		selectOptions(shoopingCartPageobj.getStateDropdown(), "34");
 
-		//step_5.9  -enter postal code 
+		//step_5.9  -enter postal code
 		enterDataOnElements(shoopingCartPageobj.getZipPostalCode(), "500050");
-		
-		//step_5.10  -click checkoutbutton 
+
+		//step_5.10  -click checkoutbutton
 		clickOnElement(shoopingCartPageobj.getCheckoutButton());
-		
+
 		//Step_5.11  -click BillingAddresscontinueButton
 	    clickOnElement(shoopingCartPageobj.getBillingAddresscontinueButton());
-				
+
 				//Step_5.12  -select InStorePickupCheckbox
 	    clickOnElementUsingActionsClass(shoopingCartPageobj.getInStorePickupCheckbox());
-				
+
 				//Step_5.13  -click ShippingAddressContinueButton
 	    clickOnElement(shoopingCartPageobj.getShippingAddressContinueButton());
-				
+
 				//Step_5.14  -select payment method
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getPaymentMethodByCOD());
 		Reporter.log("payment method COD",true);
-				
+
 				//Step_5.15  -click payment method continue button
 		clickOnElement(shoopingCartPageobj.getPaymentMethodContinueButton());
-				
-		
+
+
 				//Step_5.16  -click payment Information continue button
 		clickOnElement(shoopingCartPageobj.getPaymentInfoContinueButton());
-				
+
 				//Step_5.17  -click ConfirmOrderButton
 		clickOnElement(shoopingCartPageobj.getConfirmOrderButton());
 				Reporter.log("confirm order :desktop",true);
-				
+
 				//Step_5.18  -click ForOrderDetails
 		clickOnElement(shoopingCartPageobj.getClickhereForOrderDetails());
-				
+
 				//step_5.19  -navigateBack to thankyou
 				driver.navigate().back();
-				
+
 				//step_5.20  -click on ThankYou continue button
 		clickOnElement(shoopingCartPageobj.getContinueThankYou());
 				Reporter.log("ThankYou desktop order placed",true);
 				Reporter.log("step 4: desktop verified & order successfull",true);
-		
+
 	}
 
 	// @Parameters("notebook")
@@ -378,11 +378,11 @@ public class ProductTest extends BaseConfig {
 		// softassertobj.assertAll();
 		//step_6.4  -click on  add to cart
 		clickOnElement(noteBookPageobj.getAddToCart());
-		
+
 		Reporter.log(" notebook product is added to cart", true);
 		//Reporter.log("All Notebooks products Verified .......", true);
 
-		
+
 		Assert.assertTrue(shoopingCartPageobj.getShoopingCartlink().isDisplayed());
 		Reporter.log("shooping cart displayed", true);
 
@@ -403,46 +403,46 @@ public class ProductTest extends BaseConfig {
 
 		//step_6.9  -enter postal code
 		enterDataOnElements(shoopingCartPageobj.getZipPostalCode(), "500059");
-		
+
 		//step_6.10  -click CheckoutButton
 		clickOnElement(shoopingCartPageobj.getCheckoutButton());
-		
-		
+
+
 		//Step_6.11  -click BillingAddresscontinueButton
 	    clickOnElement(shoopingCartPageobj.getBillingAddresscontinueButton());
-				
+
 				//Step_6.12  -select InStorePickupCheckbox
 	    clickOnElementUsingActionsClass(shoopingCartPageobj.getInStorePickupCheckbox());
-				
+
 				//Step_6.13  -click ShippingAddressContinueButton
 	    clickOnElement(shoopingCartPageobj.getShippingAddressContinueButton());
-				
+
 				//Step_6.14  -select payment method
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getPaymentMethodByCOD());
 		Reporter.log("payment method COD",true);
-				
+
 				//Step_6.15  -click payment method continue button
 		clickOnElement(shoopingCartPageobj.getPaymentMethodContinueButton());
-				
-		
+
+
 				//Step_6.16  -click payment Information continue button
 		clickOnElement(shoopingCartPageobj.getPaymentInfoContinueButton());
-				
+
 				//Step_6.17  -click ConfirmOrderButton
 		clickOnElement(shoopingCartPageobj.getConfirmOrderButton());
 				Reporter.log("confirm order :notebook",true);
-				
+
 				//Step_6.18  -click ForOrderDetails
 		clickOnElement(shoopingCartPageobj.getClickhereForOrderDetails());
-				
+
 				//step_6.19  -navigateBack to thankyou
 				driver.navigate().back();
-				
+
 				//step_6.20  -click on ThankYou continue button
 		clickOnElement(shoopingCartPageobj.getContinueThankYou());
 				Reporter.log("ThankYou Notebook order placed",true);
 				Reporter.log("step 4: Notebook verified & order successfull",true);
-		
+
 	}
 
 	@Test(enabled = true, groups = "rt", priority = 4)
@@ -501,7 +501,7 @@ public class ProductTest extends BaseConfig {
 			test.log(Status.FAIL, "Step4: verified the AccessoriesProduct is Not displayed and not enabled");
 		}
 
-         //step_7.3 select & click Accessories product        
+         //step_7.3 select & click Accessories product
 		clickOnElement(accessoriesPageobj.getAccessorieprd1());
 
 		// add to cart is displayed or not
@@ -516,8 +516,8 @@ public class ProductTest extends BaseConfig {
 		clickOnElement(accessoriesPageobj.getAddToCart());
 		//Reporter.log("All Accessories products Verified .......", true);
 		Reporter.log(" accessories product is added to cart", true);
-		
-		
+
+
 		Assert.assertTrue(shoopingCartPageobj.getShoopingCartlink().isDisplayed());
 		Reporter.log("shooping cart displayed", true);
 
@@ -525,7 +525,7 @@ public class ProductTest extends BaseConfig {
 		Reporter.log("shooping cart enabled", true);
 
 		waitStatement(shoopingCartPageobj.getShoopingCartlink());
-		
+
 		//Step_7.5 go to shoopingCart page
 		clickOnElement(shoopingCartPageobj.getShoopingCartlink());
 
@@ -540,40 +540,40 @@ public class ProductTest extends BaseConfig {
 
 		//step_7.9  -enter postal code
 		enterDataOnElements(shoopingCartPageobj.getZipPostalCode(), "500060");
-		
+
 		//step_7.10  -click CheckoutButton
 		clickOnElement(shoopingCartPageobj.getCheckoutButton());
-		
+
 		//Step_7.11  -click BillingAddresscontinueButton
 	    clickOnElement(shoopingCartPageobj.getBillingAddresscontinueButton());
-				
+
 				//Step_7.12  -select InStorePickupCheckbox
 	    clickOnElementUsingActionsClass(shoopingCartPageobj.getInStorePickupCheckbox());
-				
+
 				//Step_7.13  -click ShippingAddressContinueButton
 	    clickOnElement(shoopingCartPageobj.getShippingAddressContinueButton());
-				
+
 				//Step_7.14  -select payment method
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getPaymentMethodByCOD());
 		Reporter.log("payment method COD",true);
-				
+
 				//Step_7.15  -click payment method continue button
 		clickOnElement(shoopingCartPageobj.getPaymentMethodContinueButton());
-				
-		
+
+
 				//Step_7.16  -click payment Information continue button
 		clickOnElement(shoopingCartPageobj.getPaymentInfoContinueButton());
-				
+
 				//Step_7.17  -click ConfirmOrderButton
 		clickOnElement(shoopingCartPageobj.getConfirmOrderButton());
 				Reporter.log("confirm order :Accessorie",true);
-				
+
 				//Step_7.18  -click ForOrderDetails
 		clickOnElement(shoopingCartPageobj.getClickhereForOrderDetails());
-				
+
 				//step_7.19  -navigateBack to thankyou
 				driver.navigate().back();
-				
+
 				//step_7.20  -click on ThankYou continue button
 		clickOnElement(shoopingCartPageobj.getContinueThankYou());
 				Reporter.log("ThankYou Accessories order placed",true);
@@ -610,7 +610,7 @@ public class ProductTest extends BaseConfig {
 		Assert.assertEquals(cameraPhotoPageobj.getCameraPhoto().isDisplayed(), true);
 		Reporter.log("cameraPhoto is displayed ", true);
 
-		// cameraPhoto is enabled or not 
+		// cameraPhoto is enabled or not
 		Assert.assertEquals(cameraPhotoPageobj.getCameraPhoto().isEnabled(), true);
 		Reporter.log("cameraPhoto is enabled ", true);
 
@@ -650,7 +650,7 @@ public class ProductTest extends BaseConfig {
 		//step_8.4  -Add cameraphoto product to cart
 		clickOnElement(cameraPhotoPageobj.getAddToCart());
 		Reporter.log("ElectronicsTest-Camera product is  added to cart", true);
-		
+
 		Assert.assertTrue(shoopingCartPageobj.getShoopingCartlink().isDisplayed());
 		Reporter.log("shooping cart displayed", true);
 
@@ -663,7 +663,7 @@ public class ProductTest extends BaseConfig {
 		//step_8.6  -select AgreeTermsCheckbox
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getAgreeTermsCheckbox());
 
-		//step_8.7  -select country dropdown option	
+		//step_8.7  -select country dropdown option
 		selectOptions("Canada",shoopingCartPageobj.getCountryDropdown());
 
 		//step_8.8  -select state dropdown option
@@ -671,45 +671,45 @@ public class ProductTest extends BaseConfig {
 
 		//step_8.9  -enter postal code
 		enterDataOnElements(shoopingCartPageobj.getZipPostalCode(), "500070");
-		
+
 		//step_8.10  -click on checkout button
 		clickOnElement(shoopingCartPageobj.getCheckoutButton());
-		
+
 		//Step_8.11  -click BillingAddresscontinueButton
 	    clickOnElement(shoopingCartPageobj.getBillingAddresscontinueButton());
-				
+
 				//Step_8.12  -select InStorePickupCheckbox
 	    clickOnElementUsingActionsClass(shoopingCartPageobj.getInStorePickupCheckbox());
-				
+
 				//Step_8.13  -click ShippingAddressContinueButton
 	    clickOnElement(shoopingCartPageobj.getShippingAddressContinueButton());
-				
+
 				//Step_8.14  -select payment method
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getPaymentMethodByCOD());
 		Reporter.log("payment method COD",true);
-				
+
 				//Step_8.15  -click payment method continue button
 		clickOnElement(shoopingCartPageobj.getPaymentMethodContinueButton());
-				
-		
+
+
 				//Step_8.16  -click payment Information continue button
 		clickOnElement(shoopingCartPageobj.getPaymentInfoContinueButton());
-				
+
 				//Step_8.17  -click ConfirmOrderButton
 		clickOnElement(shoopingCartPageobj.getConfirmOrderButton());
 				Reporter.log("confirm order :Cameraphoto",true);
-				
+
 				//Step_8.18  -click ForOrderDetails
 		clickOnElement(shoopingCartPageobj.getClickhereForOrderDetails());
-				
+
 				//step_8.19  -navigateBack to thankyou
 				driver.navigate().back();
-				
+
 				//step_8.20  -click on ThankYou continue button
 		clickOnElement(shoopingCartPageobj.getContinueThankYou());
 				Reporter.log("ThankYou camera order placed",true);
 				Reporter.log("step 4: camera verified & order successfull",true);
-				
+
 	}
 
 	@Test(groups = "rt", priority = 6, enabled = true)
@@ -782,8 +782,8 @@ public class ProductTest extends BaseConfig {
 		clickOnElement(cellPhonesPageobj.getAddToCart());
 
 		Reporter.log("Cell phones product is added to cart", true);
-		
-		
+
+
 		Assert.assertTrue(shoopingCartPageobj.getShoopingCartlink().isDisplayed());
 		Reporter.log("shooping cart displayed", true);
 
@@ -792,57 +792,57 @@ public class ProductTest extends BaseConfig {
 
 		//Step_9.5 go to shoopingCart page
 		clickOnElement(shoopingCartPageobj.getShoopingCartlink());
-		
+
 		//Step_9.6 click agreeTerms checkbox
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getAgreeTermsCheckbox());
 
 		//Step_9.7 select country option from dropdown
 		selectOptions(shoopingCartPageobj.getCountryDropdown(),"1");
 
-		//Step_9.8 select state option from dropdown 
+		//Step_9.8 select state option from dropdown
 		selectOptions(shoopingCartPageobj.getStateDropdown(),21);
 
 		//Step_9.9 enter postal code
 		enterDataOnElements(shoopingCartPageobj.getZipPostalCode(), "500080");
-		
+
 		//step_9.10 click on checkout button
 		clickOnElement(shoopingCartPageobj.getCheckoutButton());
-		
+
 		//Step_9.11  -click BillingAddresscontinueButton
 	    clickOnElement(shoopingCartPageobj.getBillingAddresscontinueButton());
-				
+
 				//Step_9.12  -select InStorePickupCheckbox
 	    clickOnElementUsingActionsClass(shoopingCartPageobj.getInStorePickupCheckbox());
-				
+
 				//Step_9.13  -click ShippingAddressContinueButton
 	    clickOnElement(shoopingCartPageobj.getShippingAddressContinueButton());
-				
+
 				//Step_9.14  -select payment method
 		clickOnElementUsingActionsClass(shoopingCartPageobj.getPaymentMethodByCOD());
 		Reporter.log("payment method COD",true);
-				
+
 				//Step_9.15  -click payment method continue button
 		clickOnElement(shoopingCartPageobj.getPaymentMethodContinueButton());
-				
-		
+
+
 				//Step_9.16  -click payment Information continue button
 		clickOnElement(shoopingCartPageobj.getPaymentInfoContinueButton());
-				
+
 				//Step_9.17  -click ConfirmOrderButton
 		clickOnElement(shoopingCartPageobj.getConfirmOrderButton());
 				Reporter.log("confirm order :CellPhone",true);
-				
+
 				//Step_9.18  -click ForOrderDetails
 		clickOnElement(shoopingCartPageobj.getClickhereForOrderDetails());
-				
+
 				//step_9.19  -navigateBack to thankyou
 				driver.navigate().back();
-				
+
 				//step_9.20  -click on ThankYou continue button
 		clickOnElement(shoopingCartPageobj.getContinueThankYou());
 				Reporter.log("ThankYou phone order placed");
 				Reporter.log("step 4: cellphone verified & order successfull",true);
-				
+
 	}
 
 }

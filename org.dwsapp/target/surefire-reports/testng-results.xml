@@ -386,28 +386,28 @@
       <![CDATA[browser closed successfull]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-11-26T17:47:15 IST" name="RegressionSuite" finished-at="2025-11-26T17:49:45 IST" duration-ms="150141">
+  <suite started-at="2025-11-29T20:33:55 IST" name="RegressionSuite" finished-at="2025-11-29T20:35:26 IST" duration-ms="90848">
     <groups>
       <group name="rt">
-        <method signature="ProductTest.verifyHealthBook()[pri:1, instance:org.dwsapp.producttest.ProductTest@74ea2410]" name="verifyHealthBook" class="org.dwsapp.producttest.ProductTest"/>
-        <method signature="ProductTest.verifyAccessories()[pri:4, instance:org.dwsapp.producttest.ProductTest@74ea2410]" name="verifyAccessories" class="org.dwsapp.producttest.ProductTest"/>
-        <method signature="ProductTest.verifyCellPhones()[pri:6, instance:org.dwsapp.producttest.ProductTest@74ea2410]" name="verifyCellPhones" class="org.dwsapp.producttest.ProductTest"/>
+        <method signature="ProductTest.verifyHealthBook()[pri:1, instance:org.dwsapp.producttest.ProductTest@5149d738]" name="verifyHealthBook" class="org.dwsapp.producttest.ProductTest"/>
+        <method signature="ProductTest.verifyAccessories()[pri:4, instance:org.dwsapp.producttest.ProductTest@5149d738]" name="verifyAccessories" class="org.dwsapp.producttest.ProductTest"/>
+        <method signature="ProductTest.verifyCellPhones()[pri:6, instance:org.dwsapp.producttest.ProductTest@5149d738]" name="verifyCellPhones" class="org.dwsapp.producttest.ProductTest"/>
       </group> <!-- rt -->
       <group name="it">
-        <method signature="ProductTest.verifyNoteBooks()[pri:3, instance:org.dwsapp.producttest.ProductTest@74ea2410]" name="verifyNoteBooks" class="org.dwsapp.producttest.ProductTest"/>
+        <method signature="ProductTest.verifyNoteBooks()[pri:3, instance:org.dwsapp.producttest.ProductTest@5149d738]" name="verifyNoteBooks" class="org.dwsapp.producttest.ProductTest"/>
       </group> <!-- it -->
       <group name="ft">
-        <method signature="ProductTest.verifyDesktop()[pri:2, instance:org.dwsapp.producttest.ProductTest@74ea2410]" name="verifyDesktop" class="org.dwsapp.producttest.ProductTest"/>
-        <method signature="ProductTest.verifyCamera()[pri:5, instance:org.dwsapp.producttest.ProductTest@74ea2410]" name="verifyCamera" class="org.dwsapp.producttest.ProductTest"/>
+        <method signature="ProductTest.verifyDesktop()[pri:2, instance:org.dwsapp.producttest.ProductTest@5149d738]" name="verifyDesktop" class="org.dwsapp.producttest.ProductTest"/>
+        <method signature="ProductTest.verifyCamera()[pri:5, instance:org.dwsapp.producttest.ProductTest@5149d738]" name="verifyCamera" class="org.dwsapp.producttest.ProductTest"/>
       </group> <!-- ft -->
     </groups>
-    <test started-at="2025-11-26T17:47:15 IST" name="Test" finished-at="2025-11-26T17:49:45 IST" duration-ms="150067">
+    <test started-at="2025-11-29T20:33:55 IST" name="Test" finished-at="2025-11-29T20:35:26 IST" duration-ms="90809">
       <class name="org.dwsapp.producttest.ProductTest">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:47:15 IST" name="reportSetup" finished-at="2025-11-26T17:47:15 IST" duration-ms="546" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:33:55 IST" name="reportSetup" finished-at="2025-11-29T20:33:55 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:47:15 IST" name="browserSetup" finished-at="2025-11-26T17:47:27 IST" duration-ms="11328" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:33:55 IST" name="browserSetup" finished-at="2025-11-29T20:33:59 IST" duration-ms="4127" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -435,7 +435,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:47:27 IST" name="login" finished-at="2025-11-26T17:47:31 IST" duration-ms="4585" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:33:59 IST" name="login" finished-at="2025-11-29T20:34:01 IST" duration-ms="1732" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 3.1  : Login hyperlink click - success]]>
@@ -454,7 +454,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyHealthBook()[pri:1, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:47:31 IST" name="verifyHealthBook" finished-at="2025-11-26T17:47:56 IST" duration-ms="24583" status="PASS">
+        <test-method signature="verifyHealthBook()[pri:1, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:01 IST" name="verifyHealthBook" finished-at="2025-11-29T20:34:13 IST" duration-ms="12093" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[search box is displayed ]]>
@@ -506,7 +506,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyHealthBook -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:47:56 IST" name="logout" finished-at="2025-11-26T17:47:57 IST" duration-ms="1397" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:13 IST" name="logout" finished-at="2025-11-29T20:34:16 IST" duration-ms="3288" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 5  :  Logout Button clicked - success]]>
@@ -516,7 +516,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:47:57 IST" name="login" finished-at="2025-11-26T17:48:00 IST" duration-ms="2794" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:16 IST" name="login" finished-at="2025-11-29T20:34:18 IST" duration-ms="1812" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 3.1  : Login hyperlink click - success]]>
@@ -535,7 +535,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyDesktop()[pri:2, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:48:00 IST" name="verifyDesktop" finished-at="2025-11-26T17:48:18 IST" duration-ms="18182" status="PASS">
+        <test-method signature="verifyDesktop()[pri:2, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:18 IST" name="verifyDesktop" finished-at="2025-11-29T20:34:30 IST" duration-ms="11606" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[computerhover is displayed ]]>
@@ -578,7 +578,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyDesktop -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:48:18 IST" name="logout" finished-at="2025-11-26T17:48:20 IST" duration-ms="1275" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:30 IST" name="logout" finished-at="2025-11-29T20:34:31 IST" duration-ms="865" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 5  :  Logout Button clicked - success]]>
@@ -588,7 +588,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:48:20 IST" name="login" finished-at="2025-11-26T17:48:22 IST" duration-ms="2720" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:31 IST" name="login" finished-at="2025-11-29T20:34:32 IST" duration-ms="1633" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 3.1  : Login hyperlink click - success]]>
@@ -607,7 +607,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyNoteBooks()[pri:3, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:48:22 IST" name="verifyNoteBooks" finished-at="2025-11-26T17:48:40 IST" duration-ms="17784" status="PASS">
+        <test-method signature="verifyNoteBooks()[pri:3, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:32 IST" name="verifyNoteBooks" finished-at="2025-11-29T20:34:44 IST" duration-ms="12032" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[computerhover is displayed ]]>
@@ -650,7 +650,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyNoteBooks -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:48:40 IST" name="logout" finished-at="2025-11-26T17:48:41 IST" duration-ms="1249" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:44 IST" name="logout" finished-at="2025-11-29T20:34:45 IST" duration-ms="1105" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 5  :  Logout Button clicked - success]]>
@@ -660,7 +660,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:48:41 IST" name="login" finished-at="2025-11-26T17:48:44 IST" duration-ms="2892" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:45 IST" name="login" finished-at="2025-11-29T20:34:47 IST" duration-ms="1599" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 3.1  : Login hyperlink click - success]]>
@@ -679,7 +679,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyAccessories()[pri:4, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:48:44 IST" name="verifyAccessories" finished-at="2025-11-26T17:49:01 IST" duration-ms="16368" status="PASS">
+        <test-method signature="verifyAccessories()[pri:4, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:47 IST" name="verifyAccessories" finished-at="2025-11-29T20:34:58 IST" duration-ms="10646" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[computerhover is displayed ]]>
@@ -722,7 +722,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyAccessories -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:01 IST" name="logout" finished-at="2025-11-26T17:49:02 IST" duration-ms="1525" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:58 IST" name="logout" finished-at="2025-11-29T20:34:59 IST" duration-ms="1344" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 5  :  Logout Button clicked - success]]>
@@ -732,7 +732,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:02 IST" name="login" finished-at="2025-11-26T17:49:05 IST" duration-ms="2922" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:34:59 IST" name="login" finished-at="2025-11-29T20:35:01 IST" duration-ms="1770" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 3.1  : Login hyperlink click - success]]>
@@ -751,7 +751,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyCamera()[pri:5, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:05 IST" name="verifyCamera" finished-at="2025-11-26T17:49:20 IST" duration-ms="15223" status="PASS">
+        <test-method signature="verifyCamera()[pri:5, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:35:01 IST" name="verifyCamera" finished-at="2025-11-29T20:35:11 IST" duration-ms="9942" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ElectronicsHover is displayed ]]>
@@ -794,7 +794,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyCamera -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:20 IST" name="logout" finished-at="2025-11-26T17:49:22 IST" duration-ms="1519" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:35:11 IST" name="logout" finished-at="2025-11-29T20:35:11 IST" duration-ms="862" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 5  :  Logout Button clicked - success]]>
@@ -804,7 +804,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:22 IST" name="login" finished-at="2025-11-26T17:49:25 IST" duration-ms="2966" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:35:11 IST" name="login" finished-at="2025-11-29T20:35:13 IST" duration-ms="1628" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 3.1  : Login hyperlink click - success]]>
@@ -823,7 +823,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyCellPhones()[pri:6, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:25 IST" name="verifyCellPhones" finished-at="2025-11-26T17:49:42 IST" duration-ms="16816" status="PASS">
+        <test-method signature="verifyCellPhones()[pri:6, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:35:13 IST" name="verifyCellPhones" finished-at="2025-11-29T20:35:24 IST" duration-ms="10889" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ElectronicsHover is displayed ]]>
@@ -866,7 +866,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyCellPhones -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:42 IST" name="logout" finished-at="2025-11-26T17:49:43 IST" duration-ms="1917" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:35:24 IST" name="logout" finished-at="2025-11-29T20:35:25 IST" duration-ms="909" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Step 5  :  Logout Button clicked - success]]>
@@ -876,20 +876,20 @@
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:43 IST" name="closeBrowser" finished-at="2025-11-26T17:49:44 IST" duration-ms="608" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:35:25 IST" name="closeBrowser" finished-at="2025-11-29T20:35:25 IST" duration-ms="332" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[browser closed successfull]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportTerminate()[pri:0, instance:org.dwsapp.producttest.ProductTest@74ea2410]" started-at="2025-11-26T17:49:44 IST" name="reportTerminate" finished-at="2025-11-26T17:49:45 IST" duration-ms="737" status="PASS">
+        <test-method is-config="true" signature="reportTerminate()[pri:0, instance:org.dwsapp.producttest.ProductTest@5149d738]" started-at="2025-11-29T20:35:25 IST" name="reportTerminate" finished-at="2025-11-29T20:35:26 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTerminate -->
       </class> <!-- org.dwsapp.producttest.ProductTest -->
     </test> <!-- Test -->
-    <test started-at="2025-11-26T17:49:45 IST" name="edgetest" finished-at="2025-11-26T17:49:45 IST" duration-ms="0">
+    <test started-at="2025-11-29T20:35:26 IST" name="edgetest" finished-at="2025-11-29T20:35:26 IST" duration-ms="1">
     </test> <!-- edgetest -->
   </suite> <!-- RegressionSuite -->
 </testng-results>

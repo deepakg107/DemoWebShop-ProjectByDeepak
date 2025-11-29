@@ -1,0 +1,2 @@
+java -jar jenkins.war 
+for jenkins server run in cmd
